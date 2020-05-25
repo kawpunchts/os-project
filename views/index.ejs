@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/assets/index.css">
+    <title>To do list</title>
+</head>
+
+<body>
+    <div class="allContainer">
+        <div class="bodyHeader">
+            <h1>TO - DO - LIST</h1>
+            <p>list your to do things</p>
+        </div>
+
+        <form action="/" method="POST" class="bodyForm">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Title" name="title">
+            </div>
+            <div class="form-group">
+                <label>Details</label>
+                <input type="text" class="form-control" placeholder="More descriptions" name="description">
+            </div>
+            <button type="submit" class="btn btn-outline-success formButton">Add</button>
+        </form>
+
+        <div class="listpart">
+            <h2>- All your list -</h2>
+            <div class="cardSection">
+                <% tasks.forEach(tasks => { %>
+                <div class="card" style="margin-bottom: 10px;">
+                    <h5 class="card-header"><%= tasks.title %></h5>
+                    <div class="card-body">
+                        <p class="card-text"><%= tasks.description %></p>
+                        <form action="/edit/<%= tasks._id %>" method="get">
+                            <button type="submit" class="btn btn-outline-warning formButton">Edit</button>
+                        </form>
+                        <a href="/remove/<%= tasks._id %>" class="btn btn-outline-danger remove">Delete</a>
+                        
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

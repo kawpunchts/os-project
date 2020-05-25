@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+body{
+    background-color: #AADACD;
+    align-items: center;
+    font-family: 'Mitr', sans-serif;
+}
+h1,h2{
+    color: #3A3776;
+}
+p{
+    color: gray;
+}
+.allContainer{
+    background: rgba(225, 225, 225, 0.3);
+    align-items: center;
+    margin: 10%;
+}
+.bodyHeader{
+    text-align: center;
+    padding: 20px;
+}
+.bodyForm{
+    width: 50%;
+    margin-left: 28%;
+    padding: 20px;
+
+}
+.formButton{
+    float :right;
+    margin-left: 10px;
+}
+a{
+    float :right;
+    position: relative;
+    margin-left: 10px;
+}
+.listpart{
+    padding: 50px;
+    margin-left: 28%;
+    align-items: center;
+    width: 50%;
+
+}
+
+.cardSection{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
