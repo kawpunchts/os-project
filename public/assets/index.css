@@ -1,48 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-body{
-    background-color: #AADACD;
-    align-items: center;
-    font-family: 'Mitr', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
 }
-h1,h2{
-    color: #3A3776;
+body {
+  /* background-color: #aadacd; */
+  align-items: center;
+  font-family: "Mitr", sans-serif;
 }
-p{
-    color: gray;
+h1,
+h2 {
+  color: #3a3776;
 }
-.allContainer{
-    background: rgba(225, 225, 225, 0.3);
-    align-items: center;
-    margin: 10%;
+p {
+  color: gray;
 }
-.bodyHeader{
-    text-align: center;
-    padding: 20px;
+.allContainer {
+  /* background: rgba(225, 225, 225, 0.3); */
+  align-items: center;
+  margin: 5%;
 }
-.bodyForm{
-    width: 50%;
-    margin-left: 28%;
-    padding: 20px;
+.bodyHeader {
+  text-align: center;
+  padding: 20px;
+}
+.bodyForm {
+  width: 50%;
+  margin-left: 28%;
+  padding: 20px;
+}
+.formButton {
+  float: right;
+  margin-left: 10px;
+}
+a {
+  float: right;
+  position: relative;
+  margin-left: 10px;
+}
+.listpart {
+  padding: 50px;
+  margin-left: 24%;
+  align-items: center;
+  width: 50%;
+}
 
+.cardSection {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  width: 120%;
 }
-.formButton{
-    float :right;
-    margin-left: 10px;
-}
-a{
-    float :right;
-    position: relative;
-    margin-left: 10px;
-}
-.listpart{
-    padding: 50px;
-    margin-left: 28%;
-    align-items: center;
-    width: 50%;
+.navbar {
+  background-color: #ffd000;
+  height: auto;
 
+  /* position: fixed; */
+}
+ul {
+  float: right;
 }
 
-.cardSection{
-    padding-top: 30px;
-    padding-bottom: 30px;
+li {
+  float: left;
+  width: 17%;
+  padding: 4px;
+  margin-right: 8px;
+}
+img {
+  width: auto;
+  height: 30px;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
